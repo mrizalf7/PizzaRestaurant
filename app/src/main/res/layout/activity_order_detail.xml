@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/orderDetail"
+        style="@style/BrownStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/order_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/asep"
+        style="@style/BlackStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderDetail"
+        tools:text="Asep"/>
+
+    <LinearLayout
+        android:id="@+id/linearLeyot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/asep">
+
+
+        <TextView
+            android:id="@+id/storeBoy"
+            style="@style/BlackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="@string/store1"/>
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/BlackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Cihampelas"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLeyot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLeyot">
+
+    <TextView
+        android:id="@+id/orderedFood"
+        style="@style/BlackStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Kue Kastangel"/>
+
+        <TextView
+            android:id="@+id/orderStatus1"
+            style="@style/BlackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/sudah_dipesan"
+            app:layout_constraintStart_toEndOf="@id/orderedFood"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shipping"
+        style="@style/BrownStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pengiriman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLeyot1"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupShipment"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shipping">
+
+        <RadioButton
+            android:id="@+id/rb_option_a"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_radio_button"
+            android:button="@null"
+            android:layoutDirection="rtl"
+            tools:layout_editor_absoluteY="266dp" />
+
+        <RadioButton
+            android:id="@+id/rb_option_b"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_radio_button"
+            android:button="@null"
+            android:layoutDirection="rtl"
+            app:layout_constraintTop_toBottomOf="@id/rb_option_a"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/rb_option_a_desc"
+        style="@style/BlackStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/ambil_sendiri"
+        app:layout_constraintStart_toEndOf="@id/radioGroupShipment"
+        app:layout_constraintTop_toBottomOf="@id/shipping"/>
+
+    <TextView
+        android:id="@+id/rb_option_b_desc"
+        style="@style/BlackStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/fast_delivery_minimal_30_menit_sampai"
+        app:layout_constraintStart_toEndOf="@id/radioGroupShipment"
+        app:layout_constraintTop_toBottomOf="@id/rb_option_a_desc"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/doneButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:background="@drawable/button_background"
+        style="@style/BrownStyle"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupShipment"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

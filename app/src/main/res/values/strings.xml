@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">PizzaRest</string>
+    <string name="store">Store</string>
+    <string name="store1">Store:</string>
+    <string name="your_name">Your Name</string>
+    <string name="location">Location</string>
+    <string name="find_on_maps">Find on Maps</string>
+    <string name="see_menus">See Menus</string>
+    <string name="store_view">Store</string>
+    <string name="pizza_pepperoni_dummy">Pepperoni pizza adalah pizza yang memiliki
+        topping daging pepperoni sapi asli. Di Italia, pepperoni disebut salame piccante (salami panas).
+        Biasa menjadi bahan baku pizza di Amerika Serikat, yang sering mewakili 30% pelengkap.
+        Pizza ini cocok untuk santap siang ataupun malam anda</string>
+    <string name="price">Price:</string>
+    <string name="order_now">Order Now</string>
+    <string name="back_button">Back</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="sudah_dipesan">sudah dipesan</string>
+    <string name="pengiriman">Pengiriman</string>
+    <string name="ambil_sendiri">Ambil sendiri</string>
+    <string name="fast_delivery_minimal_30_menit_sampai">Fast Delivery (minimal 30 menit sampai)</string>
+    <string name="done">Done</string>
+    <string name="submit">Submit</string>
+    <string-array name="planets_array">
+        <item>Cihampelas</item>
+        <item>Cileunyi</item>
+        <item>Cimekar</item>
+        <item>Cicendo</item>
+        <item>Cibiru</item>
+        <item>Nasution</item>
+        <item>Ahmad Yani</item>
+        <item>Surapati</item>
+    </string-array>
+</resources>
